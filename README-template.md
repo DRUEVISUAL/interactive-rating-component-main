@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://druevisual.github.io/interactive-rating-component-main/
 
 ## My process
 
@@ -46,11 +45,11 @@ Users should be able to:
 
 ### What I learned
 
-I learned 
+This is still a newbie project so the html and css part is pretty simple. I learned how to use custom attributes and manipulate it with javascript.
 
 ### Continued development
 
-I need to work on my javascript knowledge. The main problem is that i don't see the structure of the language. Sometimes where i think it should be a semicolon there isn't
+I need to work on my javascript knowledge. The main problem is that i don't see the structure of the language. Sometimes where i think it should be a semicolon there isn't, when or where to use the different type of brackets. I also need to work on responsiveness.
 
 ## Author
 

@@ -20,68 +20,72 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="container">
-    
-    <div class="star_background"><img src="./images/icon-star.svg" alt="star icon" class="star_image"></div>
-    <div class="text_container">
-      <h1 class="title">How did we do?</h1>
-
-      <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p>
-    </div>
-    
-    <div class="rating_numbers">
-      <form action="" method="post" id="rating" class="rating_numbers">
-
-        <label for="rating_1" class="radio"> 
-          <input type="radio" name="rating" id="rating_1" class="radio_input" value="rating_1">
-          <div class="radio_circle rc1" isChecked="false"></div>
-        </label>
-
-        <label for="rating_2" class="radio"> 
-          <input type="radio" name="rating" id="rating_2" class="radio_input" value="rating_2">
-          <div class="radio_circle rc2" isChecked="false"></div>
-        </label>
-
-        <label for="rating_3" class="radio"> 
-          <input type="radio" name="rating" id="rating_3" class="radio_input" value="rating_3" checked>
-          <div class="radio_circle rc3" isChecked="false"></div>
-        </label>
-
-        <label for="rating_4" class="radio"> 
-          <input type="radio" name="rating" id="rating_4" class="radio_input" value="rating_4">
-          <div class="radio_circle rc4" isChecked="false"></div>
-        </label>
-
-        <label for="rating_5" class="radio"> 
-          <input type="radio" name="rating" id="rating_5" class="radio_input" value="rating_5">
-          <div class="radio_circle rc5" isChecked="false"></div>
-        </label>
-          
-      </form>
+  <main>
+    <div class="container">
       
-    </div>
+      <div class="star_background"><img src="./images/icon-star.svg" alt="star icon" class="star_image"></div>
+      <div class="text_container">
+        <h1 class="title">How did we do?</h1>
 
-    <button id="rating" class="submit">Submit</button>
-  </div>
+        <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      
+      <div class="rating_numbers">
+        <form action="" method="post" id="rating" class="rating_numbers">
+
+          <label for="rating_1" class="radio"> 
+            <input type="radio" name="rating" id="rating_1" class="radio_input" value="rating_1">
+            <div class="radio_circle rc1" isChecked="false"></div>
+          </label>
+
+          <label for="rating_2" class="radio"> 
+            <input type="radio" name="rating" id="rating_2" class="radio_input" value="rating_2">
+            <div class="radio_circle rc2" isChecked="false"></div>
+          </label>
+
+          <label for="rating_3" class="radio"> 
+            <input type="radio" name="rating" id="rating_3" class="radio_input" value="rating_3" checked>
+            <div class="radio_circle rc3" isChecked="false"></div>
+          </label>
+
+          <label for="rating_4" class="radio"> 
+            <input type="radio" name="rating" id="rating_4" class="radio_input" value="rating_4">
+            <div class="radio_circle rc4" isChecked="false"></div>
+          </label>
+
+          <label for="rating_5" class="radio"> 
+            <input type="radio" name="rating" id="rating_5" class="radio_input" value="rating_5">
+            <div class="radio_circle rc5" isChecked="false"></div>
+          </label>
+            
+        </form>
+        
+      </div>
+
+      <button class="submit">Submit</button>
+    </div>
+  </main>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="thanks_card">
-    <img src="./images/illustration-thank-you.svg" alt="image on thank you panel" class="thanks_image">
+  <section>
+    <div class="thanks_card">
+      <img src="./images/illustration-thank-you.svg" alt="image on thank you panel" class="thanks_image">
 
-    <div class="rating_revision">You selected <p id="rating_revision"></p> out of 5</div>
+      <div class="rating_revision">You selected <p id="rating_revision"></p> out of 5</div>
 
-    <div class="text_container">
-      <h1 class="title center">Thank you!</h1>
+      <div class="text_container">
+        <h1 class="title center">Thank you!</h1>
 
-      <p class="text center">We appreciate you taking the time to give a rating. If you ever need more support, 
-        don’t hesitate to get in touch!</p>
+        <p class="text center">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+
+      <!-- Thank you state end -->
     </div>
-
-    <!-- Thank you state end -->
-  </div>
+  </section>
 
   <footer>
     <div class="attribution">
