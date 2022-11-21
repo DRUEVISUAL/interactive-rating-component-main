@@ -3,7 +3,7 @@
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-  - [Acknowledgments]
+  - [Acknowledgments](#acknowledgments)
   - [The challenge](#the-challenge)
   - [Links](#links)
   - [Built with](#built-with)
@@ -49,5 +49,4 @@ I need to work on my javascript knowledge. The main problem is that i don't see 
 
 - Website - In Progress
 - Frontend Mentor - [@DRUEVISUAL](https://www.frontendmentor.io/profile/DRUEVISUAL)
-ourusername
 
