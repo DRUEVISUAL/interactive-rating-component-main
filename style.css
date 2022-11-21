@@ -1,10 +1,11 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--mediumgrey);
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: var(--orange);
 }
 
 * {
@@ -104,33 +105,8 @@ body {
   justify-content: center;
 }
 
-.rc1::after {
-  content: "1";
-  font-size: 1.1rem;
-  font-weight: 700;
-  opacity: 1;
-}
-
-.rc2::after {
-  content: "2";
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.rc3::after {
-  content: "3";
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.rc4::after {
-  content: "4";
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.rc5::after {
-  content: "5";
+.radio_circle::after {
+  content: "" !important;
   font-size: 1.1rem;
   font-weight: 700;
 }

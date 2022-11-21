@@ -37,27 +37,27 @@
 
           <label for="rating_1" class="radio"> 
             <input type="radio" name="rating" id="rating_1" class="radio_input" value="rating_1">
-            <div class="radio_circle rc1" isChecked="false"></div>
+            <div class="radio_circle">1</div>
           </label>
 
           <label for="rating_2" class="radio"> 
             <input type="radio" name="rating" id="rating_2" class="radio_input" value="rating_2">
-            <div class="radio_circle rc2" isChecked="false"></div>
+            <div class="radio_circle">2</div>
           </label>
 
           <label for="rating_3" class="radio"> 
             <input type="radio" name="rating" id="rating_3" class="radio_input" value="rating_3" checked>
-            <div class="radio_circle rc3" isChecked="false"></div>
+            <div class="radio_circle">3</div>
           </label>
 
           <label for="rating_4" class="radio"> 
             <input type="radio" name="rating" id="rating_4" class="radio_input" value="rating_4">
-            <div class="radio_circle rc4" isChecked="false"></div>
+            <div class="radio_circle">4</div>
           </label>
 
           <label for="rating_5" class="radio"> 
             <input type="radio" name="rating" id="rating_5" class="radio_input" value="rating_5">
-            <div class="radio_circle rc5" isChecked="false"></div>
+            <div class="radio_circle">5</div>
           </label>
             
         </form>
@@ -95,165 +95,31 @@
   </footer>
 
   <script>
-    const rc1 = document.querySelector(".rc1");
-    const rc2 = document.querySelector(".rc2");
-    const rc3 = document.querySelector(".rc3");
-    const rc4 = document.querySelector(".rc4");
-    const rc5 = document.querySelector(".rc5");
+    const rcs = document.querySelectorAll(".radio_circle");
     const submit = document.querySelector(".submit");
-    const thanks = document.querySelector(".thanks_card")
+    const thanks = document.querySelector(".thanks_card");
     const rating = document.getElementById("rating_revision");
 
-    rc1.addEventListener("click", () => {
-    const state = rc1.getAttribute("isChecked")
+    rcs.forEach(element => {
+      element.addEventListener("click", (ev) => {
+        rcs.forEach((element) => {
+          element.classList.remove("rc_active")
+        })
+        element.classList.add("rc_active")
+        rating.innerText = ev.currentTarget.innerText;
 
-    if (state === "false") {
-        rc1.classList.add('rc_active')
-        rc2.classList.remove('rc_active')
-        rc3.classList.remove('rc_active')
-        rc4.classList.remove('rc_active')
-        rc5.classList.remove('rc_active')
-        rating.innerHTML = "";
-        rating.textContent += "1";
-        rc1.setAttribute("isChecked", true)
-        rc2.setAttribute("isChecked", false)
-        rc3.setAttribute("isChecked", false)
-        rc4.setAttribute("isChecked", false)
-        rc5.setAttribute("isChecked", false)
-    }
-    });
-
-    rc2.addEventListener("click", () => {
-        const state = rc2.getAttribute("isChecked")
-
-        if (state === "false") {
-            rc1.classList.remove('rc_active')
-            rc2.classList.add('rc_active')
-            rc3.classList.remove('rc_active')
-            rc4.classList.remove('rc_active')
-            rc5.classList.remove('rc_active')
-            rating.innerHTML = "";
-            rating.textContent += "2";
-            rc1.setAttribute("isChecked", false)
-            rc2.setAttribute("isChecked", true)
-            rc3.setAttribute("isChecked", false)
-            rc4.setAttribute("isChecked", false)
-            rc5.setAttribute("isChecked", false)
-        }
-    });
-
-    rc3.addEventListener("click", () => {
-        const state = rc3.getAttribute("isChecked")
-
-        if (state === "false") {
-            rc1.classList.remove('rc_active')
-            rc2.classList.remove('rc_active')
-            rc3.classList.add('rc_active')
-            rc4.classList.remove('rc_active')
-            rc5.classList.remove('rc_active')
-
-            rating.innerHTML = "";
-            rating.textContent += "3";
-            rc1.setAttribute("isChecked", false)
-            rc2.setAttribute("isChecked", false)
-            rc3.setAttribute("isChecked", true)
-            rc4.setAttribute("isChecked", false)
-            rc5.setAttribute("isChecked", false)
-        }
-    });
-
-    rc4.addEventListener("click", () => {
-        const state = rc4.getAttribute("isChecked")
-
-        if (state === "false") {
-            rc1.classList.remove('rc_active')
-            rc2.classList.remove('rc_active')
-            rc3.classList.remove('rc_active')
-            rc4.classList.add('rc_active')
-            rc5.classList.remove('rc_active')
-            rating.innerHTML = "";
-            rating.textContent += "4";
-            rc1.setAttribute("isChecked", false)
-            rc2.setAttribute("isChecked", false)
-            rc3.setAttribute("isChecked", false)
-            rc4.setAttribute("isChecked", true)
-            rc5.setAttribute("isChecked", false)
-        }
-    });
-
-    rc5.addEventListener("click", () => {
-        const state = rc5.getAttribute("isChecked")
-
-        if (state === "false") {
-            rc1.classList.remove('rc_active')
-            rc2.classList.remove('rc_active')
-            rc3.classList.remove('rc_active')
-            rc4.classList.remove('rc_active')
-            rc5.classList.add('rc_active')
-            rating.innerHTML = "";
-            rating.textContent += "5";
-            rc1.setAttribute("isChecked", false)
-            rc2.setAttribute("isChecked", false)
-            rc3.setAttribute("isChecked", false)
-            rc4.setAttribute("isChecked", false)
-            rc5.setAttribute("isChecked", true)
-        }
-    });
-
-    rc1.addEventListener("mouseenter", () => {
-        rc1.classList.add("rc_hover")
-    });
-
-    rc1.addEventListener("mouseleave", () => {
-        rc1.classList.remove("rc_hover")
-    });
-
-    rc2.addEventListener("mouseenter", () => {
-        rc2.classList.add("rc_hover")
-    });
-
-    rc2.addEventListener("mouseleave", () => {
-        rc2.classList.remove("rc_hover")
-    });
-    
-
-    rc3.addEventListener("mouseenter", () => {
-        rc3.classList.add("rc_hover")
-    });
-
-    rc3.addEventListener("mouseleave", () => {
-        rc3.classList.remove("rc_hover")
-    });
-    
-
-    rc4.addEventListener("mouseenter", () => {
-        rc4.classList.add("rc_hover")
-    });
-
-    rc4.addEventListener("mouseleave", () => {
-        rc4.classList.remove("rc_hover")
-    });
-    
-
-    rc5.addEventListener("mouseenter", () => {
-        rc5.classList.add("rc_hover")
-    });
-
-    rc5.addEventListener("mouseleave", () => {
-        rc5.classList.remove("rc_hover")
-    });
-
-    submit.addEventListener("mouseenter", () => {
-        submit.classList.add("su_hover")
-    });
-
-    submit.addEventListener("mouseleave", () => {
-        submit.classList.remove("su_hover")
-    });
-
-    submit.addEventListener("click", () => {
-        thanks.style.display = "flex";
+        submit.addEventListener("click", () => {
+          thanks.style.display = "flex";
+        })
+      })
+      element.addEventListener("mouseenter", () => {
+        element.classList.add("rc_hover")
+      })
+      element.addEventListener("mouseleave", () => {
+        element.classList.remove("rc_hover")
+      })
     })
+
   </script>
 </body>
 </html>
